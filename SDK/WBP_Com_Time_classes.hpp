@@ -21,24 +21,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Com_Time.WBP_Com_Time_C
-// 0x02F0 (0x08C0 - 0x05D0)
+// 0x0310 (0x08E0 - 0x05D0)
 class UWBP_Com_Time_C final : public UEMUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UImage*                                 Image_ClockIcon;                                   // 0x05D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_TimeDesc;                                     // 0x05E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_TimeTitle;                                    // 0x05E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateFontInfo                         字体样式;                                          // 0x05F0(0x0060)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	struct FVector2D                              Image_Size;                                        // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateFontInfo                         TextStyle_TimeDesc;                                // 0x0658(0x0060)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	ESlateVisibility                              In_Visibility_TimeTitle;                           // 0x06B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6B9[0x7];                                      // 0x06B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            Color_Desc;                                        // 0x06C0(0x0028)(Edit, BlueprintVisible)
-	struct FSlateColor                            Color_Title;                                       // 0x06E8(0x0028)(Edit, BlueprintVisible)
-	struct FLinearColor                           Color_Icon;                                        // 0x0710(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            Img_Time;                                          // 0x0720(0x00D0)(Edit, BlueprintVisible)
-	struct FSlateBrush                            Img_Refresh;                                       // 0x07F0(0x00D0)(Edit, BlueprintVisible)
+	class USizeBox*                               SizeBox_0;                                         // 0x05E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_TimeDesc;                                     // 0x05E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_TimeTitle;                                    // 0x05F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FSlateFontInfo                         字体样式;                                          // 0x05F8(0x0060)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	struct FVector2D                              Image_Size;                                        // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateFontInfo                         TextStyle_TimeDesc;                                // 0x0660(0x0060)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	ESlateVisibility                              In_Visibility_TimeTitle;                           // 0x06C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C1[0x7];                                      // 0x06C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            Color_Desc;                                        // 0x06C8(0x0028)(Edit, BlueprintVisible)
+	struct FSlateColor                            Color_Title;                                       // 0x06F0(0x0028)(Edit, BlueprintVisible)
+	struct FLinearColor                           Color_Icon;                                        // 0x0718(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_728[0x8];                                      // 0x0728(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            Img_Time;                                          // 0x0730(0x00D0)(Edit, BlueprintVisible)
+	struct FSlateBrush                            Img_Refresh;                                       // 0x0800(0x00D0)(Edit, BlueprintVisible)
+	float                                         Sizebox_Width;                                     // 0x08D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Sizebox_Height;                                    // 0x08D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_Com_Time(int32 EntryPoint);

@@ -58,7 +58,7 @@ namespace SDK
 
 // Class EM.AccessoryItem
 // 0x0090 (0x0330 - 0x02A0)
-class AAccessoryItem final : public AActor
+class AAccessoryItem : public AActor
 {
 public:
 	int32                                         DataId;                                            // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -578,7 +578,7 @@ DUMPER7_ASSERTS_UUIState;
 
 // Class EM.WBP_Battle_Combo_PC
 // 0x0000 (0x05E8 - 0x05E8)
-class UWBP_Battle_Combo_PC final : public UUIState
+class UWBP_Battle_Combo_PC : public UUIState
 {
 public:
 	void OnBattleCountChanged(int32 BeforeCount, int32 BeforeLevel, int32 NewCount, int32 NewLevel, int32 Reason);
@@ -805,7 +805,7 @@ DUMPER7_ASSERTS_UAttrBuff;
 
 // Class EM.UnWaringDecal
 // 0x00C0 (0x0360 - 0x02A0)
-class AUnWaringDecal final : public AActor
+class AUnWaringDecal : public AActor
 {
 public:
 	uint8                                         Pad_2A0[0xC0];                                     // 0x02A0(0x00C0)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -1979,7 +1979,7 @@ DUMPER7_ASSERTS_AEMActor;
 
 // Class EM.Battle
 // 0x06E0 (0x0A40 - 0x0360)
-class alignas(0x10) ABattle final : public AEMActor
+class alignas(0x10) ABattle : public AEMActor
 {
 public:
 	class UBattleEventComponent*                  BattleEvent;                                       // 0x0360(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3510,7 +3510,7 @@ DUMPER7_ASSERTS_ACharacterBase;
 
 // Class EM.TalkManager
 // 0x0118 (0x01C8 - 0x00B0)
-class UTalkManager final : public UActorComponent
+class UTalkManager : public UActorComponent
 {
 public:
 	uint8                                         Pad_B0[0x20];                                      // 0x00B0(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
@@ -4394,7 +4394,7 @@ DUMPER7_ASSERTS_UBTService_AlertTargetPlayerInvisible;
 
 // Class EM.WeaponAttributesSet
 // 0x00F8 (0x0440 - 0x0348)
-class UWeaponAttributesSet final : public UBaseAttributesSet
+class UWeaponAttributesSet : public UBaseAttributesSet
 {
 public:
 	struct FCipherFloat                           Equip_ATK;                                         // 0x0348(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, NoDestructor, NativeAccessSpecifierPublic)
@@ -4985,7 +4985,7 @@ DUMPER7_ASSERTS_AMonsterSpawn;
 
 // Class EM.GroupMonsterSpawn
 // 0x01B0 (0x0850 - 0x06A0)
-class AGroupMonsterSpawn final : public AMonsterSpawn
+class AGroupMonsterSpawn : public AMonsterSpawn
 {
 public:
 	uint8                                         Pad_6A0[0x20];                                     // 0x06A0(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
@@ -5207,7 +5207,7 @@ DUMPER7_ASSERTS_UAnimNotify_AUBase;
 
 // Class EM.AnimNotify_AUFootStepsChar
 // 0x0008 (0x0178 - 0x0170)
-class UAnimNotify_AUFootStepsChar final : public UAnimNotify_AUBase
+class UAnimNotify_AUFootStepsChar : public UAnimNotify_AUBase
 {
 public:
 	bool                                          OpenDebug;                                         // 0x0170(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5238,7 +5238,7 @@ DUMPER7_ASSERTS_UAnimNotify_AUFootStepsChar;
 
 // Class EM.LevelVolume
 // 0x0020 (0x02C0 - 0x02A0)
-class ALevelVolume final : public AActor
+class ALevelVolume : public AActor
 {
 public:
 	TArray<struct FBox>                           LoadBoxs;                                          // 0x02A0(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
@@ -5368,7 +5368,7 @@ DUMPER7_ASSERTS_UAnimNotify_ChangeCorpParam;
 
 // Class EM.SkillTimeLineComponent
 // 0x00E8 (0x0128 - 0x0040)
-class USkillTimeLineComponent final : public UEMObject
+class USkillTimeLineComponent : public UEMObject
 {
 public:
 	uint8                                         Pad_40[0x18];                                      // 0x0040(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
@@ -5612,7 +5612,7 @@ DUMPER7_ASSERTS_USkillCreatureAttributesSet;
 
 // Class EM.BattleMapIcon
 // 0x0010 (0x02A8 - 0x0298)
-class UBattleMapIcon final : public UUserWidget
+class UBattleMapIcon : public UUserWidget
 {
 public:
 	uint8                                         Pad_298[0x4];                                      // 0x0298(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -5716,7 +5716,7 @@ DUMPER7_ASSERTS_UAnimNotify_SkillFeatureNormal;
 
 // Class EM.AnimNotify_CharSkillFeature
 // 0x0008 (0x0068 - 0x0060)
-class UAnimNotify_CharSkillFeature final : public UAnimNotify_SkillFeatureNormal
+class UAnimNotify_CharSkillFeature : public UAnimNotify_SkillFeatureNormal
 {
 public:
 	uint8                                         Pad_60[0x8];                                       // 0x0060(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -6210,7 +6210,7 @@ DUMPER7_ASSERTS_UAnimNotify_PushPlayerAway;
 
 // Class EM.ManualMechanismComponent
 // 0x0060 (0x0250 - 0x01F0)
-class UManualMechanismComponent final : public USceneComponent
+class UManualMechanismComponent : public USceneComponent
 {
 public:
 	uint8                                         Pad_1F0[0x8];                                      // 0x01F0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -6250,7 +6250,7 @@ DUMPER7_ASSERTS_UManualMechanismComponent;
 
 // Class EM.Billboard
 // 0x0160 (0x0720 - 0x05C0)
-class UBillboard final : public UWidgetComponent
+class UBillboard : public UWidgetComponent
 {
 public:
 	uint8                                         Pad_5B8[0x60];                                     // 0x05B8(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
@@ -6406,7 +6406,7 @@ DUMPER7_ASSERTS_UConsumeBullet;
 
 // Class EM.BattlePoint
 // 0x0020 (0x0380 - 0x0360)
-class ABattlePoint final : public AEMActor
+class ABattlePoint : public AEMActor
 {
 public:
 	int32                                         PointID;                                           // 0x0360(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6435,7 +6435,7 @@ DUMPER7_ASSERTS_ABattlePoint;
 
 // Class EM.AnimNotify_SkillFxBase
 // 0x0000 (0x0050 - 0x0050)
-class UAnimNotify_SkillFxBase final : public UAnimNotifyBase
+class UAnimNotify_SkillFxBase : public UAnimNotifyBase
 {
 public:
 	bool CheckSkillFxNotifyCpp(class USkeletalMeshComponent* Mesh) const;
@@ -6886,7 +6886,7 @@ DUMPER7_ASSERTS_UAsyncVideoAction;
 
 // Class EM.AnimNotifyState_CameraControl
 // 0x0028 (0x0058 - 0x0030)
-class UAnimNotifyState_CameraControl final : public UAnimNotifyState
+class UAnimNotifyState_CameraControl : public UAnimNotifyState
 {
 public:
 	TArray<struct FCameraNotifyStateInfo>         CameraNotifyStateInfos;                            // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -6917,7 +6917,7 @@ DUMPER7_ASSERTS_UAnimNotifyState_CameraControl;
 
 // Class EM.AnimNotifyState_CameraShake
 // 0x0008 (0x0038 - 0x0030)
-class UAnimNotifyState_CameraShake final : public UAnimNotifyState
+class UAnimNotifyState_CameraShake : public UAnimNotifyState
 {
 public:
 	TSubclassOf<class UMatineeCameraShake>        ShakeClass;                                        // 0x0030(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7106,7 +7106,7 @@ DUMPER7_ASSERTS_ICacheBase;
 
 // Class EM.SkillObject
 // 0x00E8 (0x0128 - 0x0040)
-class USkillObject final : public UEMObject
+class USkillObject : public UEMObject
 {
 public:
 	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -7306,7 +7306,7 @@ DUMPER7_ASSERTS_UAnimNotifyState_ChangeGravity;
 
 // Class EM.AnimNotifyState_ControlRotation
 // 0x0028 (0x0058 - 0x0030)
-class UAnimNotifyState_ControlRotation final : public UAnimNotifyState
+class UAnimNotifyState_ControlRotation : public UAnimNotifyState
 {
 public:
 	uint8                                         bAddRotation : 1;                                  // 0x0030(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
@@ -7435,7 +7435,7 @@ DUMPER7_ASSERTS_UBoardBubbleSubsystem;
 
 // Class EM.AnimNotifyState_EditorPP
 // 0x0250 (0x0280 - 0x0030)
-class UAnimNotifyState_EditorPP final : public UAnimNotifyState
+class UAnimNotifyState_EditorPP : public UAnimNotifyState
 {
 public:
 	class UPostProcessComponent*                  PostProcessComponent;                              // 0x0030(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7717,7 +7717,7 @@ DUMPER7_ASSERTS_UEMObjectWithData;
 
 // Class EM.StoryVarsObject
 // 0x0030 (0x00C8 - 0x0098)
-class UStoryVarsObject final : public UEMObjectWithData
+class UStoryVarsObject : public UEMObjectWithData
 {
 public:
 	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -8137,7 +8137,7 @@ DUMPER7_ASSERTS_UEMReplicationGraphNode_FramingSimple;
 
 // Class EM.AnimNotifyState_HideChar
 // 0x0060 (0x0090 - 0x0030)
-class UAnimNotifyState_HideChar final : public UAnimNotifyState
+class UAnimNotifyState_HideChar : public UAnimNotifyState
 {
 public:
 	uint8                                         Pad_30[0x9];                                       // 0x0030(0x0009)(Fixing Size After Last Property [ Dumper-7 ])
@@ -8502,7 +8502,7 @@ DUMPER7_ASSERTS_UBTDecorator_CheckSpCost;
 
 // Class EM.AnimNotifyState_Mon_SkillMove
 // 0x0098 (0x0260 - 0x01C8)
-class UAnimNotifyState_Mon_SkillMove final : public UAnimNotifyState_BPBase
+class UAnimNotifyState_Mon_SkillMove : public UAnimNotifyState_BPBase
 {
 public:
 	bool                                          bLockRotationDirection;                            // 0x01C8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -9023,7 +9023,7 @@ DUMPER7_ASSERTS_AStaticCreateActor;
 
 // Class EM.AnimNotifyState_RimColor
 // 0x0070 (0x00A0 - 0x0030)
-class UAnimNotifyState_RimColor final : public UAnimNotifyState
+class UAnimNotifyState_RimColor : public UAnimNotifyState
 {
 public:
 	ERimColorType                                 RimColorType;                                      // 0x0030(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -9326,7 +9326,7 @@ DUMPER7_ASSERTS_UStoryLogUtils;
 
 // Class EM.AnimNotifyState_Sound
 // 0x00C0 (0x0288 - 0x01C8)
-class UAnimNotifyState_Sound final : public UAnimNotifyState_BPBase
+class UAnimNotifyState_Sound : public UAnimNotifyState_BPBase
 {
 public:
 	TMap<class FName, bool>                       EndStopOrLoopPlayTags;                             // 0x01C8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
@@ -9561,7 +9561,7 @@ DUMPER7_ASSERTS_UAnimNotifyState_UnbindWeapon;
 
 // Class EM.RandomCreateActorManager
 // 0x00A0 (0x0340 - 0x02A0)
-class ARandomCreateActorManager final : public AActor
+class ARandomCreateActorManager : public AActor
 {
 public:
 	TMap<int32, struct FRandomActorTemplate>      Templates;                                         // 0x02A0(0x0050)(Edit, BlueprintVisible, EditConst, NativeAccessSpecifierPublic)
@@ -10680,7 +10680,7 @@ DUMPER7_ASSERTS_UExecutionFlowPin;
 
 // Class EM.AOITriggerBox
 // 0x0000 (0x08F0 - 0x08F0)
-class AAOITriggerBox final : public AAOITriggerBase
+class AAOITriggerBox : public AAOITriggerBase
 {
 public:
 	void SetBoxExtent(const struct FVector& NewBoxExtent, const struct FVector& TipBoxExtent);
@@ -11079,7 +11079,7 @@ DUMPER7_ASSERTS_UMoveRotatorAsyncAction;
 
 // Class EM.RegionMap
 // 0x0298 (0x0880 - 0x05E8)
-class URegionMap final : public UUIState
+class URegionMap : public UUIState
 {
 public:
 	struct FRotator                               CameraRotation;                                    // 0x05E8(0x000C)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -11673,7 +11673,7 @@ DUMPER7_ASSERTS_UAuSetSceneSoundPauseTrack;
 
 // Class EM.EMDecalActor
 // 0x0060 (0x0308 - 0x02A8)
-class AEMDecalActor final : public ADecalActor
+class AEMDecalActor : public ADecalActor
 {
 public:
 	class UMaterialInstanceDynamic*               MaterialInstanceDynamic;                           // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -12506,7 +12506,7 @@ DUMPER7_ASSERTS_UEMWorldTickableSubsystem;
 
 // Class EM.BattleMap
 // 0x05C0 (0x0BA8 - 0x05E8)
-class UBattleMap final : public UUIState
+class UBattleMap : public UUIState
 {
 public:
 	struct FRotator                               CameraRotation;                                    // 0x05E8(0x000C)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -12609,7 +12609,7 @@ DUMPER7_ASSERTS_UBattleMap;
 
 // Class EM.BattleMapEnemy
 // 0x00A0 (0x0338 - 0x0298)
-class UBattleMapEnemy final : public UUserWidget
+class UBattleMapEnemy : public UUserWidget
 {
 public:
 	uint8                                         Pad_298[0x30];                                     // 0x0298(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
@@ -12718,7 +12718,7 @@ DUMPER7_ASSERTS_UEMNavLinkCustomComponent;
 
 // Class EM.NpcBiographyInteractiveComponent
 // 0x0020 (0x0530 - 0x0510)
-class UNpcBiographyInteractiveComponent final : public UInteractiveBaseComponent
+class UNpcBiographyInteractiveComponent : public UInteractiveBaseComponent
 {
 public:
 	float                                         InteractiveFaceAngle;                              // 0x0508(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -12752,7 +12752,7 @@ DUMPER7_ASSERTS_UNpcBiographyInteractiveComponent;
 
 // Class EM.BattlePet
 // 0x00A0 (0x00F0 - 0x0050)
-class UBattlePet final : public UEMRepObject
+class UBattlePet : public UEMRepObject
 {
 public:
 	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -13017,7 +13017,7 @@ DUMPER7_ASSERTS_UTagInfo_Dead;
 
 // Class EM.EMNavigationQueryFilter
 // 0x0000 (0x0048 - 0x0048)
-class UEMNavigationQueryFilter final : public UNavigationQueryFilter
+class UEMNavigationQueryFilter : public UNavigationQueryFilter
 {
 public:
 	static class UClass* StaticClass()
@@ -13336,7 +13336,7 @@ DUMPER7_ASSERTS_UPhantomIndicator;
 
 // Class EM.EMNavLinkProxy
 // 0x0160 (0x0450 - 0x02F0)
-class alignas(0x10) AEMNavLinkProxy final : public ANavLinkProxy
+class alignas(0x10) AEMNavLinkProxy : public ANavLinkProxy
 {
 public:
 	uint8                                         Pad_2F0[0x8];                                      // 0x02F0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -14578,7 +14578,7 @@ DUMPER7_ASSERTS_UEMSkeletalMesh;
 
 // Class EM.PlayerAttributesSet
 // 0x0060 (0x0508 - 0x04A8)
-class UPlayerAttributesSet final : public UAttributesSet
+class UPlayerAttributesSet : public UAttributesSet
 {
 public:
 	struct FCipherInt                             Exp;                                               // 0x04A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, SaveGame, RepNotify, NoDestructor, NativeAccessSpecifierPublic)
@@ -15419,7 +15419,7 @@ DUMPER7_ASSERTS_UBTTask_CanHitBase;
 
 // Class EM.NpcTalkInteractiveComponent
 // 0x0040 (0x0550 - 0x0510)
-class UNpcTalkInteractiveComponent final : public UInteractiveBaseComponent
+class UNpcTalkInteractiveComponent : public UInteractiveBaseComponent
 {
 public:
 	uint8                                         Pad_508[0x10];                                     // 0x0508(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -15634,7 +15634,7 @@ DUMPER7_ASSERTS_UBTTask_ClearHatredList;
 
 // Class EM.RandomActorDataManager
 // 0x00F8 (0x0398 - 0x02A0)
-class ARandomActorDataManager final : public AActor
+class ARandomActorDataManager : public AActor
 {
 public:
 	TMap<int32, struct FActorParams>              RandomActorInfos;                                  // 0x02A0(0x0050)(Edit, BlueprintVisible, EditConst, NativeAccessSpecifierPublic)
@@ -16263,7 +16263,7 @@ DUMPER7_ASSERTS_UDynaCameraModifier;
 
 // Class EM.DynaCameraModifierBasic
 // 0x0000 (0x0060 - 0x0060)
-class UDynaCameraModifierBasic final : public UDynaCameraModifier
+class UDynaCameraModifierBasic : public UDynaCameraModifier
 {
 public:
 	static class UClass* StaticClass()
@@ -16918,7 +16918,7 @@ DUMPER7_ASSERTS_UEMPathFunctionLibrary;
 
 // Class EM.CustomNPC
 // 0x03D0 (0x0910 - 0x0540)
-class ACustomNPC final : public ACharacter
+class ACustomNPC : public ACharacter
 {
 public:
 	uint8                                         Pad_538[0x188];                                    // 0x0538(0x0188)(Fixing Size After Last Property [ Dumper-7 ])
@@ -17026,7 +17026,7 @@ DUMPER7_ASSERTS_UBTTask_GetCoverInfo;
 
 // Class EM.PlayerCharacter
 // 0x0A00 (0x26C0 - 0x1CC0)
-class APlayerCharacter final : public ACharacterBase
+class APlayerCharacter : public ACharacterBase
 {
 public:
 	uint8                                         Pad_1CC0[0x70];                                    // 0x1CC0(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
@@ -17645,7 +17645,7 @@ DUMPER7_ASSERTS_UBTTask_GetEscapeLoc;
 
 // Class EM.PickupProjectile
 // 0x0088 (0x0B78 - 0x0AF0)
-class APickupProjectile final : public APickupBase
+class APickupProjectile : public APickupBase
 {
 public:
 	class UNiagaraComponent*                      DropEffectNew;                                     // 0x0AF0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -19741,7 +19741,7 @@ DUMPER7_ASSERTS_IRegionDataHolderInterface;
 
 // Class EM.DistructableBodyActor
 // 0x0040 (0x06E0 - 0x06A0)
-class ADistructableBodyActor final : public AMechanismSummon
+class ADistructableBodyActor : public AMechanismSummon
 {
 public:
 	bool                                          HasOverlaped;                                      // 0x06A0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -19973,7 +19973,7 @@ DUMPER7_ASSERTS_UBTTask_SetAnimMoveType;
 
 // Class EM.SinglePlayerController
 // 0x0158 (0x0748 - 0x05F0)
-class ASinglePlayerController final : public APlayerController
+class ASinglePlayerController : public APlayerController
 {
 public:
 	bool                                          bLockRotate;                                       // 0x05F0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -20448,7 +20448,7 @@ DUMPER7_ASSERTS_UTargetCondition_Distance;
 
 // Class EM.PropEffectComponent
 // 0x0020 (0x0060 - 0x0040)
-class UPropEffectComponent final : public UEMObject
+class UPropEffectComponent : public UEMObject
 {
 public:
 	class APlayerCharacter*                       Owner;                                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -20843,7 +20843,7 @@ DUMPER7_ASSERTS_UBTTask_TeamMoveTo;
 
 // Class EM.RegionOnlineGridFrame
 // 0x0020 (0x02C0 - 0x02A0)
-class ARegionOnlineGridFrame final : public AActor
+class ARegionOnlineGridFrame : public AActor
 {
 public:
 	uint8                                         Pad_2A0[0x8];                                      // 0x02A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -21022,7 +21022,7 @@ DUMPER7_ASSERTS_UPetNpcCollisionCheckComponent;
 
 // Class EM.DynaPlayerCameraManager
 // 0x0670 (0x3090 - 0x2A20)
-class ADynaPlayerCameraManager final : public APlayerCameraManager
+class ADynaPlayerCameraManager : public APlayerCameraManager
 {
 public:
 	uint8                                         Pad_2A20[0x10];                                    // 0x2A20(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -21107,7 +21107,7 @@ DUMPER7_ASSERTS_UBTTask_YxdTest;
 
 // Class EM.ConditionGateBase
 // 0x00B0 (0x0A80 - 0x09D0)
-class AConditionGateBase final : public ACombatItemBase
+class AConditionGateBase : public ACombatItemBase
 {
 public:
 	bool                                          DoorOpenState;                                     // 0x09D0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -21423,7 +21423,7 @@ DUMPER7_ASSERTS_UEffectCreatureFashionComponent;
 
 // Class EM.BuffBar
 // 0x0108 (0x06F0 - 0x05E8)
-class UBuffBar final : public UUIState
+class UBuffBar : public UUIState
 {
 public:
 	TArray<class UOverlay*>                       WeaknessGroupList;                                 // 0x05E8(0x0010)(BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
@@ -21702,7 +21702,7 @@ DUMPER7_ASSERTS_AMechanismBase;
 
 // Class EM.SeatBase
 // 0x0000 (0x0A00 - 0x0A00)
-class ASeatBase final : public AMechanismBase
+class ASeatBase : public AMechanismBase
 {
 public:
 	static class UClass* StaticClass()
@@ -21868,7 +21868,7 @@ DUMPER7_ASSERTS_UDriftFeautre;
 
 // Class EM.CameraControlComponent
 // 0x0158 (0x0208 - 0x00B0)
-class UCameraControlComponent final : public UActorComponent
+class UCameraControlComponent : public UActorComponent
 {
 public:
 	uint8                                         Pad_B0[0xE0];                                      // 0x00B0(0x00E0)(Fixing Size After Last Property [ Dumper-7 ])
@@ -22137,7 +22137,7 @@ DUMPER7_ASSERTS_APickupStatic;
 
 // Class EM.PickupDissolve
 // 0x0000 (0x0AF8 - 0x0AF8)
-class APickupDissolve final : public APickupStatic
+class APickupDissolve : public APickupStatic
 {
 public:
 	void InitDissolve();
@@ -22868,7 +22868,7 @@ DUMPER7_ASSERTS_UCharDebugWidgetComponent;
 
 // Class EM.StaticCreatorComponent
 // 0x02E0 (0x04D0 - 0x01F0)
-class UStaticCreatorComponent final : public USceneComponent
+class UStaticCreatorComponent : public USceneComponent
 {
 public:
 	uint8                                         Pad_1F0[0x28];                                     // 0x01F0(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
@@ -23123,7 +23123,7 @@ DUMPER7_ASSERTS_UChatServerSubSystem;
 
 // Class EM.ClanManager
 // 0x0100 (0x03A0 - 0x02A0)
-class AClanManager final : public AActor
+class AClanManager : public AActor
 {
 public:
 	int32                                         ClanManagerId;                                     // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -23426,7 +23426,7 @@ DUMPER7_ASSERTS_UComputeWorkerSubsystem;
 
 // Class EM.ConditionLogicComponent
 // 0x0008 (0x00B8 - 0x00B0)
-class UConditionLogicComponent final : public UActorComponent
+class UConditionLogicComponent : public UActorComponent
 {
 public:
 	class FName                                   CachedTraceInfo;                                   // 0x00B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -24203,7 +24203,7 @@ DUMPER7_ASSERTS_ADefenceCore;
 
 // Class EM.DeliveryMechanism
 // 0x0028 (0x09F8 - 0x09D0)
-class ADeliveryMechanism final : public ACombatItemBase
+class ADeliveryMechanism : public ACombatItemBase
 {
 public:
 	EModeType                                     ModeType;                                          // 0x09D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -24554,7 +24554,7 @@ DUMPER7_ASSERTS_UDSBehaviorLogHelper;
 
 // Class EM.DynaCameraModifierAnim
 // 0x0108 (0x0168 - 0x0060)
-class UDynaCameraModifierAnim final : public UDynaCameraModifier
+class UDynaCameraModifierAnim : public UDynaCameraModifier
 {
 public:
 	uint8                                         Pad_60[0x108];                                     // 0x0060(0x0108)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -24577,7 +24577,7 @@ DUMPER7_ASSERTS_UDynaCameraModifierAnim;
 
 // Class EM.DynaCameraModifierKeepSight
 // 0x0090 (0x00F0 - 0x0060)
-class UDynaCameraModifierKeepSight final : public UDynaCameraModifier
+class UDynaCameraModifierKeepSight : public UDynaCameraModifier
 {
 public:
 	float                                         MaxAngleInRadiansPreemptive;                       // 0x0060(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -24693,7 +24693,7 @@ DUMPER7_ASSERTS_UECSSystem;
 
 // Class EM.EffectCreature
 // 0x0020 (0x02C0 - 0x02A0)
-class AEffectCreature final : public AActor
+class AEffectCreature : public AActor
 {
 public:
 	int32                                         EffectCreatureId;                                  // 0x02A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -25078,7 +25078,7 @@ DUMPER7_ASSERTS_AElectricGrid;
 
 // Class EM.ElevatorCharacter
 // 0x0010 (0x0550 - 0x0540)
-class AElevatorCharacter final : public ACharacter
+class AElevatorCharacter : public ACharacter
 {
 public:
 	class UElevatorInteractiveComponent*          ElevatorInteractiveComponent;                      // 0x0538(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -25131,7 +25131,7 @@ DUMPER7_ASSERTS_AElevatorCharacter;
 
 // Class EM.ElevatorMechanism
 // 0x0010 (0x09E0 - 0x09D0)
-class AElevatorMechanism final : public ACombatItemBase
+class AElevatorMechanism : public ACombatItemBase
 {
 public:
 	bool                                          CanInteractive;                                    // 0x09D0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -25507,7 +25507,7 @@ DUMPER7_ASSERTS_IEMGameInstanceTickInterface;
 
 // Class EM.EMGameState
 // 0x2390 (0x26A0 - 0x0310)
-class AEMGameState final : public AGameState
+class AEMGameState : public AGameState
 {
 public:
 	uint8                                         Pad_310[0x18];                                     // 0x0310(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
@@ -27754,7 +27754,7 @@ DUMPER7_ASSERTS_AEnvironmentAuthoringSystem;
 
 // Class EM.EnvironmentManager
 // 0x09C0 (0x0C60 - 0x02A0)
-class AEnvironmentManager final : public AActor
+class AEnvironmentManager : public AActor
 {
 public:
 	float                                         TimeOfDay;                                         // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -27843,7 +27843,7 @@ DUMPER7_ASSERTS_UTimeOfDayDataAsset;
 
 // Class EM.StaticMeshActorForLayerMask
 // 0x0020 (0x02D0 - 0x02B0)
-class AStaticMeshActorForLayerMask final : public AStaticMeshActor
+class AStaticMeshActorForLayerMask : public AStaticMeshActor
 {
 public:
 	class UTexture2D*                             LayerMaskTexture;                                  // 0x02B0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -27874,7 +27874,7 @@ DUMPER7_ASSERTS_AStaticMeshActorForLayerMask;
 
 // Class EM.EnvironmentVolume
 // 0x0F90 (0x1230 - 0x02A0)
-class AEnvironmentVolume final : public AActor
+class AEnvironmentVolume : public AActor
 {
 public:
 	float                                         BlendTime;                                         // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -28632,7 +28632,7 @@ DUMPER7_ASSERTS_UEQSTestingComponent;
 
 // Class EM.EventMgr
 // 0x02B0 (0x0550 - 0x02A0)
-class AEventMgr final : public AActor
+class AEventMgr : public AActor
 {
 public:
 	uint8                                         Pad_2A0[0x18];                                     // 0x02A0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
@@ -29124,7 +29124,7 @@ DUMPER7_ASSERTS_AExplorePreviewManager;
 
 // Class EM.ShieldBar
 // 0x0088 (0x0718 - 0x0690)
-class UShieldBar final : public UBloodBarProgress
+class UShieldBar : public UBloodBarProgress
 {
 public:
 	TDelegate<void(float DelayPercent)>           ShieldRecoverDelegate;                             // 0x0690(0x0010)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic)
@@ -29442,7 +29442,7 @@ DUMPER7_ASSERTS_UFallAttackObject;
 
 // Class EM.FallTrigger
 // 0x0040 (0x02E8 - 0x02A8)
-class AFallTrigger final : public ATriggerBase
+class AFallTrigger : public ATriggerBase
 {
 public:
 	int32                                         FallTriggerId;                                     // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -29558,7 +29558,7 @@ DUMPER7_ASSERTS_AFieldCreatureMechanism;
 
 // Class EM.SoundPointComponent
 // 0x0030 (0x0220 - 0x01F0)
-class USoundPointComponent final : public USceneComponent
+class USoundPointComponent : public USceneComponent
 {
 public:
 	uint8                                         Pad_1F0[0x18];                                     // 0x01F0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
@@ -30104,7 +30104,7 @@ DUMPER7_ASSERTS_UFormulaFunctionLibrary;
 
 // Class EM.TalkPlayerPawn
 // 0x0020 (0x0320 - 0x0300)
-class ATalkPlayerPawn final : public APawn
+class ATalkPlayerPawn : public APawn
 {
 public:
 	float                                         LookUpMaxAngle;                                    // 0x0300(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -30180,7 +30180,7 @@ DUMPER7_ASSERTS_AFortMechanism;
 
 // Class EM.ForwardLocationComponent
 // 0x00B0 (0x0230 - 0x0180)
-class UForwardLocationComponent final : public UAroundLocationComponent
+class UForwardLocationComponent : public UAroundLocationComponent
 {
 public:
 	TArray<class AActor*>                         LocationActorArraySort;                            // 0x0180(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -30211,7 +30211,7 @@ DUMPER7_ASSERTS_UForwardLocationComponent;
 
 // Class EM.NPCAnimInstance
 // 0x03F0 (0x06B0 - 0x02C0)
-class UNPCAnimInstance final : public UAnimInstance
+class UNPCAnimInstance : public UAnimInstance
 {
 public:
 	uint8                                         Pad_2C0[0x8];                                      // 0x02C0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -30968,7 +30968,7 @@ DUMPER7_ASSERTS_UGlobalPassiveEffect;
 
 // Class EM.NpcWidgetComponent
 // 0x0030 (0x05F0 - 0x05C0)
-class UNpcWidgetComponent final : public UWidgetComponent
+class UNpcWidgetComponent : public UWidgetComponent
 {
 public:
 	float                                         HeadWidgetZOffSet;                                 // 0x05B8(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -31031,7 +31031,7 @@ DUMPER7_ASSERTS_UGravityLogicComponent;
 
 // Class EM.GridFrame
 // 0x0010 (0x02B0 - 0x02A0)
-class AGridFrame final : public AActor
+class AGridFrame : public AActor
 {
 public:
 	TArray<struct FBox>                           BoundingBoxes;                                     // 0x02A0(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
@@ -31205,7 +31205,7 @@ DUMPER7_ASSERTS_UGuideManTalkUI;
 
 // Class EM.GuidePointEntranceBubble
 // 0x0078 (0x0660 - 0x05E8)
-class UGuidePointEntranceBubble final : public UUIState
+class UGuidePointEntranceBubble : public UUIState
 {
 public:
 	uint8                                         Pad_5E8[0x4];                                      // 0x05E8(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -31238,7 +31238,7 @@ DUMPER7_ASSERTS_UGuidePointEntranceBubble;
 
 // Class EM.SoundVolume
 // 0x0198 (0x0438 - 0x02A0)
-class ASoundVolume final : public AActor
+class ASoundVolume : public AActor
 {
 public:
 	bool                                          bIsInDoor;                                         // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -31562,7 +31562,7 @@ DUMPER7_ASSERTS_UPhantomBubbleTriggerComponent;
 
 // Class EM.HomeInteractiveComponent
 // 0x0020 (0x0530 - 0x0510)
-class UHomeInteractiveComponent final : public UInteractiveBaseComponent
+class UHomeInteractiveComponent : public UInteractiveBaseComponent
 {
 public:
 	float                                         InteractiveFaceAngle;                              // 0x0508(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -31623,7 +31623,7 @@ DUMPER7_ASSERTS_USummonDataObject;
 
 // Class EM.HookBase
 // 0x0028 (0x09F8 - 0x09D0)
-class AHookBase final : public ACombatItemBase
+class AHookBase : public ACombatItemBase
 {
 public:
 	bool                                          bDisplayBtn;                                       // 0x09D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -31708,7 +31708,7 @@ DUMPER7_ASSERTS_UHookGameModeComponent;
 
 // Class EM.HookInteractiveComponent
 // 0x0000 (0x0510 - 0x0510)
-class UHookInteractiveComponent final : public UInteractiveBaseComponent
+class UHookInteractiveComponent : public UInteractiveBaseComponent
 {
 public:
 	static class UClass* StaticClass()
@@ -31939,7 +31939,7 @@ DUMPER7_ASSERTS_UHotUpdateSubsystem;
 
 // Class EM.HpBar
 // 0x0040 (0x06D0 - 0x0690)
-class UHpBar final : public UBloodBarProgress
+class UHpBar : public UBloodBarProgress
 {
 public:
 	uint8                                         Pad_690[0x10];                                     // 0x0690(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -32055,7 +32055,7 @@ DUMPER7_ASSERTS_UHyperLinkRichTextBlockDecorator;
 
 // Class EM.IconComponentBase
 // 0x0030 (0x05F0 - 0x05C0)
-class UIconComponentBase final : public UWidgetComponent
+class UIconComponentBase : public UWidgetComponent
 {
 public:
 	class AActor*                                 Owner;                                             // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -32259,7 +32259,7 @@ DUMPER7_ASSERTS_UPhysGameInstanceSubsystem;
 
 // Class EM.InteractiveTriggerComponent
 // 0x00A0 (0x0530 - 0x0490)
-class UInteractiveTriggerComponent final : public USphereComponent
+class UInteractiveTriggerComponent : public USphereComponent
 {
 public:
 	TSet<TSubclassOf<class UInteractiveBaseComponent>> SpecInteractiveComps;                         // 0x0488(0x0050)(UObjectWrapper, NativeAccessSpecifierPublic)
@@ -32311,7 +32311,7 @@ DUMPER7_ASSERTS_UTagInfo_Crouch;
 
 // Class EM.InvincibleIconBar
 // 0x0008 (0x05F0 - 0x05E8)
-class UInvincibleIconBar final : public UUIState
+class UInvincibleIconBar : public UUIState
 {
 public:
 	uint8                                         Pad_5E8[0x8];                                      // 0x05E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -32992,7 +32992,7 @@ DUMPER7_ASSERTS_AStaticMeshActorForArrowNav;
 
 // Class EM.LevelConnectArrow
 // 0x0018 (0x02B8 - 0x02A0)
-class ALevelConnectArrow final : public AActor
+class ALevelConnectArrow : public AActor
 {
 public:
 	class FString                                 DisplayName;                                       // 0x02A0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -33336,7 +33336,7 @@ DUMPER7_ASSERTS_ALevelSequenceStatePlayerActor;
 
 // Class EM.LevelSequenceStateRecorder
 // 0x00B8 (0x0358 - 0x02A0)
-class ALevelSequenceStateRecorder final : public AActor
+class ALevelSequenceStateRecorder : public AActor
 {
 public:
 	TArray<struct FLevelSequenceRecorder>         Recorders;                                         // 0x02A0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -33682,7 +33682,7 @@ DUMPER7_ASSERTS_URegionPlayerHeadUIMgr;
 
 // Class EM.MainBar
 // 0x0170 (0x07A0 - 0x0630)
-class UMainBar final : public UUIBuffBase
+class UMainBar : public UUIBuffBase
 {
 public:
 	uint8                                         Pad_630[0xC];                                      // 0x0630(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
@@ -33819,7 +33819,7 @@ DUMPER7_ASSERTS_UMainBar;
 
 // Class EM.MainPolyActor
 // 0x0000 (0x02A0 - 0x02A0)
-class AMainPolyActor final : public AActor
+class AMainPolyActor : public AActor
 {
 public:
 	bool CheckOnNavmesh(struct FVector* OutNavLoc);
@@ -34961,7 +34961,7 @@ DUMPER7_ASSERTS_UUIBuffIconBase;
 
 // Class EM.UIBuffIcon
 // 0x0058 (0x0648 - 0x05F0)
-class UUIBuffIcon final : public UUIBuffIconBase
+class UUIBuffIcon : public UUIBuffIconBase
 {
 public:
 	uint8                                         Pad_5F0[0x8];                                      // 0x05F0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -35019,7 +35019,7 @@ DUMPER7_ASSERTS_UMonOptimizationComponent;
 
 // Class EM.UI_Battle_BossBar
 // 0x0010 (0x0640 - 0x0630)
-class UUI_Battle_BossBar final : public UUIBuffBase
+class UUI_Battle_BossBar : public UUIBuffBase
 {
 public:
 	class UHorizontalBox*                         HB_Buff_BP;                                        // 0x0630(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -35230,7 +35230,7 @@ DUMPER7_ASSERTS_UMonSteeringComponent;
 
 // Class EM.MonsterAnimInstance
 // 0x00A0 (0x0470 - 0x03D0)
-class UMonsterAnimInstance final : public UEMAnimInstance
+class UMonsterAnimInstance : public UEMAnimInstance
 {
 public:
 	float                                         PelvisAlpha;                                       // 0x03D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -35363,7 +35363,7 @@ DUMPER7_ASSERTS_USequenceFunctionLibrary;
 
 // Class EM.MonsterAttributesSet
 // 0x0000 (0x04A8 - 0x04A8)
-class UMonsterAttributesSet final : public UAttributesSet
+class UMonsterAttributesSet : public UAttributesSet
 {
 public:
 	static class UClass* StaticClass()
@@ -35706,7 +35706,7 @@ DUMPER7_ASSERTS_AMonsterSpawnPoint;
 
 // Class EM.PetNpcCharacter
 // 0x0010 (0x2230 - 0x2220)
-class APetNpcCharacter final : public ANpcCharacter
+class APetNpcCharacter : public ANpcCharacter
 {
 public:
 	int32                                         DynamicUniqueId;                                   // 0x2220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -36447,7 +36447,7 @@ DUMPER7_ASSERTS_INetModeInterface;
 
 // Class EM.PassiveEffectObject
 // 0x00C8 (0x0108 - 0x0040)
-class UPassiveEffectObject final : public UDynamicBindingBPObject
+class UPassiveEffectObject : public UDynamicBindingBPObject
 {
 public:
 	uint8                                         Pad_40[0x30];                                      // 0x0040(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
@@ -36548,7 +36548,7 @@ DUMPER7_ASSERTS_UNetworkManager;
 
 // Class EM.NewBreakableItem
 // 0x0350 (0x06B0 - 0x0360)
-class ANewBreakableItem final : public AEMActor
+class ANewBreakableItem : public AEMActor
 {
 public:
 	uint8                                         Pad_360[0x240];                                    // 0x0360(0x0240)(Fixing Size After Last Property [ Dumper-7 ])
@@ -36804,7 +36804,7 @@ DUMPER7_ASSERTS_UNewPhantomInitLogicEMComponent;
 
 // Class EM.NewTargetPoint
 // 0x0028 (0x02C8 - 0x02A0)
-class ANewTargetPoint final : public ATargetPoint
+class ANewTargetPoint : public ATargetPoint
 {
 public:
 	class FString                                 DisplayName;                                       // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -37286,7 +37286,7 @@ DUMPER7_ASSERTS_UPassiveEffectEditorProxy;
 
 // Class EM.Patrol
 // 0x0058 (0x02F8 - 0x02A0)
-class APatrol final : public AActor
+class APatrol : public AActor
 {
 public:
 	int32                                         PatrolId;                                          // 0x02A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -37320,7 +37320,7 @@ DUMPER7_ASSERTS_APatrol;
 
 // Class EM.PetNPCInteractiveComponent
 // 0x0000 (0x0510 - 0x0510)
-class UPetNPCInteractiveComponent final : public UInteractiveBaseComponent
+class UPetNPCInteractiveComponent : public UInteractiveBaseComponent
 {
 public:
 	static class UClass* StaticClass()
@@ -37557,7 +37557,7 @@ DUMPER7_ASSERTS_URagdollUpdateComponent;
 
 // Class EM.RandomCreateActor
 // 0x00D0 (0x0608 - 0x0538)
-class ARandomCreateActor final : public AStaticCreateActor
+class ARandomCreateActor : public AStaticCreateActor
 {
 public:
 	int32                                         RandomRuleId;                                      // 0x0538(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -38346,7 +38346,7 @@ DUMPER7_ASSERTS_USingleEditorSection;
 
 // Class EM.SkillCreature
 // 0x0670 (0x09D0 - 0x0360)
-class ASkillCreature final : public AEMActor
+class ASkillCreature : public AEMActor
 {
 public:
 	uint8                                         Pad_360[0x2F0];                                    // 0x0360(0x02F0)(Fixing Size After Last Property [ Dumper-7 ])
@@ -38471,7 +38471,7 @@ DUMPER7_ASSERTS_ASkillCreature;
 
 // Class EM.SkillFeatureSequenceActor
 // 0x0028 (0x0478 - 0x0450)
-class ASkillFeatureSequenceActor final : public ASkillFeatureNormalBaseActor
+class ASkillFeatureSequenceActor : public ASkillFeatureNormalBaseActor
 {
 public:
 	bool                                          bUseNewSkillFeature;                               // 0x0450(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -38662,7 +38662,7 @@ DUMPER7_ASSERTS_USoundLine;
 
 // Class EM.SoundPoint
 // 0x0068 (0x0308 - 0x02A0)
-class ASoundPoint final : public AActor
+class ASoundPoint : public AActor
 {
 public:
 	class USoundPointComponent*                   SoundPointComp;                                    // 0x02A0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -38694,7 +38694,7 @@ DUMPER7_ASSERTS_ASoundPoint;
 
 // Class EM.SoundSpline
 // 0x00B0 (0x0350 - 0x02A0)
-class ASoundSpline final : public AActor
+class ASoundSpline : public AActor
 {
 public:
 	uint8                                         Pad_2A0[0x8];                                      // 0x02A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -39193,7 +39193,7 @@ DUMPER7_ASSERTS_UTalkContext;
 
 // Class EM.TalkContextNew
 // 0x0088 (0x0138 - 0x00B0)
-class UTalkContextNew final : public UActorComponent
+class UTalkContextNew : public UActorComponent
 {
 public:
 	uint8                                         Pad_B0[0x20];                                      // 0x00B0(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
@@ -39322,7 +39322,7 @@ DUMPER7_ASSERTS_UTalkFunctionLibrary;
 
 // Class EM.TalkInteractiveItem
 // 0x0020 (0x08B0 - 0x0890)
-class ATalkInteractiveItem final : public ASceneItemBase
+class ATalkInteractiveItem : public ASceneItemBase
 {
 public:
 	uint8                                         Pad_890[0x8];                                      // 0x0890(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -39405,7 +39405,7 @@ DUMPER7_ASSERTS_ATalkObject;
 
 // Class EM.TalkSequenceActor
 // 0x0000 (0x0328 - 0x0328)
-class ATalkSequenceActor final : public ALevelSequenceActor
+class ATalkSequenceActor : public ALevelSequenceActor
 {
 public:
 	TArray<class UObject*> TryGetAllActorsInSequence();
@@ -39579,7 +39579,7 @@ DUMPER7_ASSERTS_ATalkStageNew;
 
 // Class EM.TalkTriggerConditionObject
 // 0x0028 (0x0068 - 0x0040)
-class UTalkTriggerConditionObject final : public UEMObject
+class UTalkTriggerConditionObject : public UEMObject
 {
 public:
 	uint8                                         Pad_40[0x8];                                       // 0x0040(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -39611,7 +39611,7 @@ DUMPER7_ASSERTS_UTalkTriggerConditionObject;
 
 // Class EM.TargetFilterBaseComponent
 // 0x0050 (0x0100 - 0x00B0)
-class UTargetFilterBaseComponent final : public UActorComponent
+class UTargetFilterBaseComponent : public UActorComponent
 {
 public:
 	TMap<int32, struct FCollisionsArray>          Eid2CollisionComponents;                           // 0x00B0(0x0050)(Edit, BlueprintVisible, EditConst, ContainsInstancedReference, NativeAccessSpecifierPublic)
@@ -39639,7 +39639,7 @@ DUMPER7_ASSERTS_UTargetFilterBaseComponent;
 
 // Class EM.TaskGuidePointBase
 // 0x00F0 (0x06D8 - 0x05E8)
-class UTaskGuidePointBase final : public UUIState
+class UTaskGuidePointBase : public UUIState
 {
 public:
 	class FString                                 DistanceUnit;                                      // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -40240,7 +40240,7 @@ DUMPER7_ASSERTS_UUI_Battle_AimLocked;
 
 // Class EM.UI_Battle_Buff
 // 0x0008 (0x0638 - 0x0630)
-class UUI_Battle_Buff final : public UUIBuffBase
+class UUI_Battle_Buff : public UUIBuffBase
 {
 public:
 	class UHorizontalBox*                         HB_Buff_Char;                                      // 0x0630(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -40306,7 +40306,7 @@ DUMPER7_ASSERTS_UUI_BattleFort;
 
 // Class EM.UI_TakeAimIndicator
 // 0x0040 (0x0610 - 0x05D0)
-class UUI_TakeAimIndicator final : public UEMUserWidget
+class UUI_TakeAimIndicator : public UEMUserWidget
 {
 public:
 	class APlayerCharacter*                       OwnerPlayer;                                       // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -40355,7 +40355,7 @@ DUMPER7_ASSERTS_UUI_TakeAimIndicator;
 
 // Class EM.UIChangeSceneLoading
 // 0x0010 (0x05F8 - 0x05E8)
-class UUIChangeSceneLoading final : public UUIState
+class UUIChangeSceneLoading : public UUIState
 {
 public:
 	uint8                                         Pad_5E8[0x10];                                     // 0x05E8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -40712,7 +40712,7 @@ DUMPER7_ASSERTS_UWaitClickSequencerSection;
 
 // Class EM.WeaponBase
 // 0x0668 (0x09C8 - 0x0360)
-class AWeaponBase final : public AEMActor
+class AWeaponBase : public AEMActor
 {
 public:
 	uint8                                         Pad_360[0x304];                                    // 0x0360(0x0304)(Fixing Size After Last Property [ Dumper-7 ])
@@ -41097,7 +41097,7 @@ DUMPER7_ASSERTS_UWorldExtern;
 
 // Class EM.WorldLoader
 // 0x0010 (0x06A8 - 0x0698)
-class AWorldLoader final : public ALevelLoader
+class AWorldLoader : public ALevelLoader
 {
 public:
 	TArray<class ULevelStreaming*>                StreamLevels;                                      // 0x0698(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)

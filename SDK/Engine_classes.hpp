@@ -23262,7 +23262,7 @@ DUMPER7_ASSERTS_UMaterialExpressionDesaturation;
 
 // Class Engine.PointLight
 // 0x0008 (0x02B8 - 0x02B0)
-class APointLight final : public ALight
+class APointLight : public ALight
 {
 public:
 	class UPointLightComponent*                   PointLightComponent;                               // 0x02B0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -32951,7 +32951,7 @@ DUMPER7_ASSERTS_UToonRenderingSettings;
 
 // Class Engine.TriggerBox
 // 0x0000 (0x02A8 - 0x02A8)
-class ATriggerBox final : public ATriggerBase
+class ATriggerBox : public ATriggerBase
 {
 public:
 	static class UClass* StaticClass()

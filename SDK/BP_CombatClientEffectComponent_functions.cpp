@@ -58,7 +58,7 @@ void UBP_CombatClientEffectComponent_C::SweepLight(float IsOpen)
 
 
 // Function BP_CombatClientEffectComponent.BP_CombatClientEffectComponent_C.OnInteractiveEffect
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 
 void UBP_CombatClientEffectComponent_C::OnInteractiveEffect()
 {
@@ -67,12 +67,17 @@ void UBP_CombatClientEffectComponent_C::OnInteractiveEffect()
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_CombatClientEffectComponent_C", "OnInteractiveEffect");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function BP_CombatClientEffectComponent.BP_CombatClientEffectComponent_C.AfterInteractiveEffect
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 
 void UBP_CombatClientEffectComponent_C::AfterInteractiveEffect()
 {
@@ -81,12 +86,17 @@ void UBP_CombatClientEffectComponent_C::AfterInteractiveEffect()
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_CombatClientEffectComponent_C", "AfterInteractiveEffect");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function BP_CombatClientEffectComponent.BP_CombatClientEffectComponent_C.ChangeColor
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   ColorType_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -101,7 +111,12 @@ void UBP_CombatClientEffectComponent_C::ChangeColor(int32 ColorType_0)
 
 	Parms.ColorType_0 = ColorType_0;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -120,7 +135,7 @@ void UBP_CombatClientEffectComponent_C::ChangeState()
 
 
 // Function BP_CombatClientEffectComponent.BP_CombatClientEffectComponent_C.OnDeactiveEffect
-// (BlueprintCallable, BlueprintEvent)
+// (Native, BlueprintCallable, BlueprintEvent)
 
 void UBP_CombatClientEffectComponent_C::OnDeactiveEffect()
 {
@@ -129,12 +144,17 @@ void UBP_CombatClientEffectComponent_C::OnDeactiveEffect()
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_CombatClientEffectComponent_C", "OnDeactiveEffect");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function BP_CombatClientEffectComponent.BP_CombatClientEffectComponent_C.OnActiveEffect
-// (BlueprintCallable, BlueprintEvent)
+// (Native, BlueprintCallable, BlueprintEvent)
 
 void UBP_CombatClientEffectComponent_C::OnActiveEffect()
 {
@@ -143,12 +163,17 @@ void UBP_CombatClientEffectComponent_C::OnActiveEffect()
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_CombatClientEffectComponent_C", "OnActiveEffect");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function BP_CombatClientEffectComponent.BP_CombatClientEffectComponent_C.OnDeadEffect
-// (BlueprintCallable, BlueprintEvent)
+// (Native, BlueprintCallable, BlueprintEvent)
 
 void UBP_CombatClientEffectComponent_C::OnDeadEffect()
 {
@@ -157,12 +182,17 @@ void UBP_CombatClientEffectComponent_C::OnDeadEffect()
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_CombatClientEffectComponent_C", "OnDeadEffect");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function BP_CombatClientEffectComponent.BP_CombatClientEffectComponent_C.OnHitedEffect
-// (BlueprintCallable, BlueprintEvent)
+// (Native, BlueprintCallable, BlueprintEvent)
 
 void UBP_CombatClientEffectComponent_C::OnHitedEffect()
 {
@@ -171,7 +201,12 @@ void UBP_CombatClientEffectComponent_C::OnHitedEffect()
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_CombatClientEffectComponent_C", "OnHitedEffect");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
