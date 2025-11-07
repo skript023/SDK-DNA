@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "Enum_NPC_Exp_Mouth_structs.hpp"
 #include "EM_classes.hpp"
 #include "Enum_NPC_Exp_Eyes_structs.hpp"
-#include "Enum_NPC_Exp_Mouth_structs.hpp"
 
 
 namespace SDK

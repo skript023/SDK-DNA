@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ShootBallControl_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ShootBallControl_structs.hpp"
 
 
 namespace SDK::Params

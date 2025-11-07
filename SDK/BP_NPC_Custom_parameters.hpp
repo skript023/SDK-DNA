@@ -12,12 +12,12 @@
 
 #include "Body_Enum_structs.hpp"
 #include "Struct_HornPrefab_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
-#include "Enum_NPC_Exp_Eyes_structs.hpp"
-#include "Struct_CMNPCModule_structs.hpp"
-#include "Struct_CMNPCHorn_structs.hpp"
 #include "Struct_CMNMaterials_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Struct_CMNPCHorn_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Struct_CMNPCModule_structs.hpp"
+#include "Enum_NPC_Exp_Eyes_structs.hpp"
 #include "Enum_NPC_Exp_Mouth_structs.hpp"
 #include "Struct_NPC_Exp_structs.hpp"
 

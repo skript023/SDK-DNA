@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "EN_ChestType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "EN_ChestType_structs.hpp"
 #include "BP_MechanismBase_classes.hpp"
 
 

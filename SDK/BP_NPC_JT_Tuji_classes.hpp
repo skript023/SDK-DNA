@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_NPC_JT_Tuji.BP_NPC_JT_Tuji_C
 // 0x0010 (0x2270 - 0x2260)
-class ABP_NPC_JT_Tuji_C final : public ABP_NPC_C
+class ABP_NPC_JT_Tuji_C : public ABP_NPC_C
 {
 public:
 	class URectLightComponent*                    RectLight;                                         // 0x2260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)

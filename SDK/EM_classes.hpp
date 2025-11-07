@@ -8502,7 +8502,7 @@ DUMPER7_ASSERTS_UBTDecorator_CheckSpCost;
 
 // Class EM.AnimNotifyState_Mon_SkillMove
 // 0x0098 (0x0260 - 0x01C8)
-class UAnimNotifyState_Mon_SkillMove : public UAnimNotifyState_BPBase
+class UAnimNotifyState_Mon_SkillMove final : public UAnimNotifyState_BPBase
 {
 public:
 	bool                                          bLockRotationDirection;                            // 0x01C8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -22137,7 +22137,7 @@ DUMPER7_ASSERTS_APickupStatic;
 
 // Class EM.PickupDissolve
 // 0x0000 (0x0AF8 - 0x0AF8)
-class APickupDissolve : public APickupStatic
+class APickupDissolve final : public APickupStatic
 {
 public:
 	void InitDissolve();
@@ -35230,7 +35230,7 @@ DUMPER7_ASSERTS_UMonSteeringComponent;
 
 // Class EM.MonsterAnimInstance
 // 0x00A0 (0x0470 - 0x03D0)
-class UMonsterAnimInstance : public UEMAnimInstance
+class UMonsterAnimInstance final : public UEMAnimInstance
 {
 public:
 	float                                         PelvisAlpha;                                       // 0x03D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -35363,7 +35363,7 @@ DUMPER7_ASSERTS_USequenceFunctionLibrary;
 
 // Class EM.MonsterAttributesSet
 // 0x0000 (0x04A8 - 0x04A8)
-class UMonsterAttributesSet : public UAttributesSet
+class UMonsterAttributesSet final : public UAttributesSet
 {
 public:
 	static class UClass* StaticClass()
@@ -40355,7 +40355,7 @@ DUMPER7_ASSERTS_UUI_TakeAimIndicator;
 
 // Class EM.UIChangeSceneLoading
 // 0x0010 (0x05F8 - 0x05E8)
-class UUIChangeSceneLoading : public UUIState
+class UUIChangeSceneLoading final : public UUIState
 {
 public:
 	uint8                                         Pad_5E8[0x10];                                     // 0x05E8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])

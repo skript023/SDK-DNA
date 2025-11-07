@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "WordFadeTimeMod_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "WordFadePosAniMod_structs.hpp"
-#include "WordFadeRotAniMod_structs.hpp"
 #include "WordFadeSizeAniMod_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "WordFadeTimeMod_structs.hpp"
+#include "WordFadePosAniMod_structs.hpp"
+#include "WordFadeRotAniMod_structs.hpp"
 #include "WordLoopMod_structs.hpp"
 
 

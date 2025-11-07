@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "ABP_NPC_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -25,10 +25,10 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_ABP_BaiTX_C;                        // 0x5F80(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_ABP_BaiTX(int32 EntryPoint);
-	void AnimNotify_ToConfident();
-	void AnimNotify_ToThink();
 	void AnimNotify_Confident01();
+	void AnimNotify_ToThink();
+	void AnimNotify_ToConfident();
+	void ExecuteUbergraph_ABP_BaiTX(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

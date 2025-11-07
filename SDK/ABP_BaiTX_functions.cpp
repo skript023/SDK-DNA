@@ -17,35 +17,15 @@
 namespace SDK
 {
 
-// Function ABP_BaiTX.ABP_BaiTX_C.ExecuteUbergraph_ABP_BaiTX
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UABP_BaiTX_C::ExecuteUbergraph_ABP_BaiTX(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_BaiTX_C", "ExecuteUbergraph_ABP_BaiTX");
-
-	Params::ABP_BaiTX_C_ExecuteUbergraph_ABP_BaiTX Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ABP_BaiTX.ABP_BaiTX_C.AnimNotify_ToConfident
+// Function ABP_BaiTX.ABP_BaiTX_C.AnimNotify_Confident01
 // (BlueprintCallable, BlueprintEvent)
 
-void UABP_BaiTX_C::AnimNotify_ToConfident()
+void UABP_BaiTX_C::AnimNotify_Confident01()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_BaiTX_C", "AnimNotify_ToConfident");
+		Func = Class->GetFunction("ABP_BaiTX_C", "AnimNotify_Confident01");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,17 +45,37 @@ void UABP_BaiTX_C::AnimNotify_ToThink()
 }
 
 
-// Function ABP_BaiTX.ABP_BaiTX_C.AnimNotify_Confident01
+// Function ABP_BaiTX.ABP_BaiTX_C.AnimNotify_ToConfident
 // (BlueprintCallable, BlueprintEvent)
 
-void UABP_BaiTX_C::AnimNotify_Confident01()
+void UABP_BaiTX_C::AnimNotify_ToConfident()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_BaiTX_C", "AnimNotify_Confident01");
+		Func = Class->GetFunction("ABP_BaiTX_C", "AnimNotify_ToConfident");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ABP_BaiTX.ABP_BaiTX_C.ExecuteUbergraph_ABP_BaiTX
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UABP_BaiTX_C::ExecuteUbergraph_ABP_BaiTX(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_BaiTX_C", "ExecuteUbergraph_ABP_BaiTX");
+
+	Params::ABP_BaiTX_C_ExecuteUbergraph_ABP_BaiTX Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

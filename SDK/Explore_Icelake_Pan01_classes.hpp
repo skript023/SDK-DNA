@@ -32,13 +32,13 @@ public:
 	int32                                         TalkTriggerId;                                     // 0x03F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnPlayTalkInterrupted_A373917A4058D3B47B54E9A3611BCEF8();
+	void OnPlayTalkEnd_A373917A4058D3B47B54E9A3611BCEF8();
+	void BndEvt__Common_Shooter_Chest_K2Node_ComponentBoundEvent_2_OnMechanismStateChangeDelegate__DelegateSignature(class ACombatItemBase* Mechanism, int32 StateId, int32 LeaveStateId);
+	void ReceiveOnExploreGroupActive();
+	void BndEvt__Explore_Fort01_Yahaha01_JiDian2_K2Node_ComponentBoundEvent_1_OnMechanismStateChangeDelegate__DelegateSignature(class ACombatItemBase* Mechanism, int32 StateId, int32 LeaveStateId);
 	void BndEvt__Explore_Icelake_Pan01_Pan4_K2Node_ComponentBoundEvent_6_OnMechanismStateChangeDelegate__DelegateSignature(class ACombatItemBase* Mechanism, int32 StateId, int32 LeaveStateId);
 	void ExecuteUbergraph_Explore_Icelake_Pan01(int32 EntryPoint);
-	void BndEvt__Explore_Fort01_Yahaha01_JiDian2_K2Node_ComponentBoundEvent_1_OnMechanismStateChangeDelegate__DelegateSignature(class ACombatItemBase* Mechanism, int32 StateId, int32 LeaveStateId);
-	void ReceiveOnExploreGroupActive();
-	void BndEvt__Common_Shooter_Chest_K2Node_ComponentBoundEvent_2_OnMechanismStateChangeDelegate__DelegateSignature(class ACombatItemBase* Mechanism, int32 StateId, int32 LeaveStateId);
-	void OnPlayTalkEnd_A373917A4058D3B47B54E9A3611BCEF8();
-	void OnPlayTalkInterrupted_A373917A4058D3B47B54E9A3611BCEF8();
 
 public:
 	static class UClass* StaticClass()

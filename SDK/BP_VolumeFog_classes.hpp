@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "EM_VolumeFog_structs.hpp"
-#include "Engine_classes.hpp"
 #include "ST_FogSphere_structs.hpp"
 #include "ST_FogCone_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK

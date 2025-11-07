@@ -14,6 +14,28 @@
 namespace SDK::Params
 {
 
+// Function Explore_Icelake_Pan01.Explore_Icelake_Pan01_C.BndEvt__Common_Shooter_Chest_K2Node_ComponentBoundEvent_2_OnMechanismStateChangeDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct Explore_Icelake_Pan01_C_BndEvt__Common_Shooter_Chest_K2Node_ComponentBoundEvent_2_OnMechanismStateChangeDelegate__DelegateSignature final
+{
+public:
+	class ACombatItemBase*                        Mechanism;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         StateId;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         LeaveStateId;                                      // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_Explore_Icelake_Pan01_C_BndEvt__Common_Shooter_Chest_K2Node_ComponentBoundEvent_2_OnMechanismStateChangeDelegate__DelegateSignature;
+
+// Function Explore_Icelake_Pan01.Explore_Icelake_Pan01_C.BndEvt__Explore_Fort01_Yahaha01_JiDian2_K2Node_ComponentBoundEvent_1_OnMechanismStateChangeDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct Explore_Icelake_Pan01_C_BndEvt__Explore_Fort01_Yahaha01_JiDian2_K2Node_ComponentBoundEvent_1_OnMechanismStateChangeDelegate__DelegateSignature final
+{
+public:
+	class ACombatItemBase*                        Mechanism;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         StateId;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         LeaveStateId;                                      // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_Explore_Icelake_Pan01_C_BndEvt__Explore_Fort01_Yahaha01_JiDian2_K2Node_ComponentBoundEvent_1_OnMechanismStateChangeDelegate__DelegateSignature;
+
 // Function Explore_Icelake_Pan01.Explore_Icelake_Pan01_C.BndEvt__Explore_Icelake_Pan01_Pan4_K2Node_ComponentBoundEvent_6_OnMechanismStateChangeDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
 struct Explore_Icelake_Pan01_C_BndEvt__Explore_Icelake_Pan01_Pan4_K2Node_ComponentBoundEvent_6_OnMechanismStateChangeDelegate__DelegateSignature final
@@ -59,28 +81,6 @@ public:
 	TArray<class UStaticCreatorComponent*>        K2Node_MakeArray_Array_1;                          // 0x0098(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
 DUMPER7_ASSERTS_Explore_Icelake_Pan01_C_ExecuteUbergraph_Explore_Icelake_Pan01;
-
-// Function Explore_Icelake_Pan01.Explore_Icelake_Pan01_C.BndEvt__Explore_Fort01_Yahaha01_JiDian2_K2Node_ComponentBoundEvent_1_OnMechanismStateChangeDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct Explore_Icelake_Pan01_C_BndEvt__Explore_Fort01_Yahaha01_JiDian2_K2Node_ComponentBoundEvent_1_OnMechanismStateChangeDelegate__DelegateSignature final
-{
-public:
-	class ACombatItemBase*                        Mechanism;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         StateId;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         LeaveStateId;                                      // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_Explore_Icelake_Pan01_C_BndEvt__Explore_Fort01_Yahaha01_JiDian2_K2Node_ComponentBoundEvent_1_OnMechanismStateChangeDelegate__DelegateSignature;
-
-// Function Explore_Icelake_Pan01.Explore_Icelake_Pan01_C.BndEvt__Common_Shooter_Chest_K2Node_ComponentBoundEvent_2_OnMechanismStateChangeDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct Explore_Icelake_Pan01_C_BndEvt__Common_Shooter_Chest_K2Node_ComponentBoundEvent_2_OnMechanismStateChangeDelegate__DelegateSignature final
-{
-public:
-	class ACombatItemBase*                        Mechanism;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         StateId;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         LeaveStateId;                                      // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_Explore_Icelake_Pan01_C_BndEvt__Common_Shooter_Chest_K2Node_ComponentBoundEvent_2_OnMechanismStateChangeDelegate__DelegateSignature;
 
 }
 

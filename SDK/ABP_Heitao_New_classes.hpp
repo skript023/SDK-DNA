@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "MovementDataAsset_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "MovementDataAsset_structs.hpp"
+#include "Engine_structs.hpp"
 #include "KawaiiPhysics_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EM_classes.hpp"

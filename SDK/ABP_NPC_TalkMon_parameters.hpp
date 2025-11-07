@@ -17,6 +17,54 @@
 namespace SDK::Params
 {
 
+// Function ABP_NPC_TalkMon.ABP_NPC_TalkMon_C.BodyLayer
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_NPC_TalkMon_C_BodyLayer final
+{
+public:
+	struct FPoseLink                              MainPose;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              BodyLayer_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_NPC_TalkMon_C_BodyLayer;
+
+// Function ABP_NPC_TalkMon.ABP_NPC_TalkMon_C.FootIK
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_NPC_TalkMon_C_FootIK final
+{
+public:
+	struct FPoseLink                              InPose_0;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              FootIK_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_NPC_TalkMon_C_FootIK;
+
+// Function ABP_NPC_TalkMon.ABP_NPC_TalkMon_C.LookIK
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_NPC_TalkMon_C_LookIK final
+{
+public:
+	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              LookIK_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_NPC_TalkMon_C_LookIK;
+
+// Function ABP_NPC_TalkMon.ABP_NPC_TalkMon_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_NPC_TalkMon_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_NPC_TalkMon_C_AnimGraph;
+
+// Function ABP_NPC_TalkMon.ABP_NPC_TalkMon_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct ABP_NPC_TalkMon_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ABP_NPC_TalkMon_C_BlueprintUpdateAnimation;
+
 // Function ABP_NPC_TalkMon.ABP_NPC_TalkMon_C.ExecuteUbergraph_ABP_NPC_TalkMon
 // 0x01F0 (0x01F0 - 0x0000)
 struct ABP_NPC_TalkMon_C_ExecuteUbergraph_ABP_NPC_TalkMon final
@@ -109,54 +157,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x01E6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_ABP_NPC_TalkMon_C_ExecuteUbergraph_ABP_NPC_TalkMon;
-
-// Function ABP_NPC_TalkMon.ABP_NPC_TalkMon_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct ABP_NPC_TalkMon_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_ABP_NPC_TalkMon_C_BlueprintUpdateAnimation;
-
-// Function ABP_NPC_TalkMon.ABP_NPC_TalkMon_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_NPC_TalkMon_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-DUMPER7_ASSERTS_ABP_NPC_TalkMon_C_AnimGraph;
-
-// Function ABP_NPC_TalkMon.ABP_NPC_TalkMon_C.LookIK
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_NPC_TalkMon_C_LookIK final
-{
-public:
-	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              LookIK_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
-};
-DUMPER7_ASSERTS_ABP_NPC_TalkMon_C_LookIK;
-
-// Function ABP_NPC_TalkMon.ABP_NPC_TalkMon_C.FootIK
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_NPC_TalkMon_C_FootIK final
-{
-public:
-	struct FPoseLink                              InPose_0;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              FootIK_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
-};
-DUMPER7_ASSERTS_ABP_NPC_TalkMon_C_FootIK;
-
-// Function ABP_NPC_TalkMon.ABP_NPC_TalkMon_C.BodyLayer
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_NPC_TalkMon_C_BodyLayer final
-{
-public:
-	struct FPoseLink                              MainPose;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              BodyLayer_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
-};
-DUMPER7_ASSERTS_ABP_NPC_TalkMon_C_BodyLayer;
 
 // Function ABP_NPC_TalkMon.ABP_NPC_TalkMon_C.GetModuleName
 // 0x0010 (0x0010 - 0x0000)

@@ -13,9 +13,9 @@
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AnimSelector_structs.hpp"
+#include "CollapsedGraph_structs.hpp"
 #include "EM_structs.hpp"
 #include "EM_classes.hpp"
-#include "CollapsedGraph_structs.hpp"
 
 
 namespace SDK
@@ -23,7 +23,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_MonsterCharacter.BP_MonsterCharacter_C
 // 0x0140 (0x2920 - 0x27E0)
-class ABP_MonsterCharacter_C : public AMonsterCharacter
+class ABP_MonsterCharacter_C final : public AMonsterCharacter
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x27E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

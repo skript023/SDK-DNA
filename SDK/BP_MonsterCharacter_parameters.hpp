@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "EM_structs.hpp"
 #include "CollapsedGraph_structs.hpp"
+#include "EM_structs.hpp"
 #include "Engine_structs.hpp"
 
 

@@ -46,11 +46,11 @@ public:
 	bool                                          __CustomProperty_bEnableKawaiiSetting_37F2FA4046F50514A438C1BCE529D87F; // 0x3B08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void ExecuteUbergraph_ABP_QNF_Kawaii(int32 EntryPoint);
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void NewKawaiiLayer(const struct FPoseLink& InPose, bool bEnableKawaiiSetting, const class FString& CurrentKawaiiState, class UPlayerAnimInstance* OwnerInstance, bool IsPhantom, struct FPoseLink* NewKawaiiLayer_0);
-	void ChestLayer(const struct FPoseLink& InPose_0, struct FPoseLink* ChestLayer_0);
 	void InteractiveKawaiiLayer(const struct FPoseLink& InPose_2, bool bEnableKawaiiSetting, const class FString& CurrentKawaiiState, class UPlayerAnimInstance* OwnerInstance1, struct FPoseLink* InteractiveKawaiiLayer_0);
+	void ChestLayer(const struct FPoseLink& InPose_0, struct FPoseLink* ChestLayer_0);
+	void NewKawaiiLayer(const struct FPoseLink& InPose, bool bEnableKawaiiSetting, const class FString& CurrentKawaiiState, class UPlayerAnimInstance* OwnerInstance, bool IsPhantom, struct FPoseLink* NewKawaiiLayer_0);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void ExecuteUbergraph_ABP_QNF_Kawaii(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
