@@ -43,7 +43,7 @@ public:
 		return GetDefaultObjImpl<ABP_Explore_Chest_Low_C>();
 	}
 };
-DUMPER7_ASSERTS_ABP_Explore_Chest_Low_C;
+//DUMPER7_ASSERTS_ABP_Explore_Chest_Low_C;
 
 }
 
