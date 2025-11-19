@@ -17,57 +17,44 @@
 namespace SDK
 {
 
-// Function ABP_ZNF_Kawaii.ABP_NPC_ZNF_Kawaii_C.InteractiveKawaiiLayer
-// (HasOutParams, BlueprintCallable)
+// Function ABP_ZNF_Kawaii.ABP_NPC_ZNF_Kawaii_C.ExecuteUbergraph_ABP_NPC_ZNF_Kawaii
+// (Final, UbergraphFunction)
 // Parameters:
-// const struct FPoseLink&                 InPose_2                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// bool                                    bEnableKawaiiSetting                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// const class FString&                    CurrentKawaiiState                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UPlayerAnimInstance*              OwnerInstance1                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FPoseLink*                       InteractiveKawaiiLayer_0                               (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UABP_NPC_ZNF_Kawaii_C::InteractiveKawaiiLayer(const struct FPoseLink& InPose_2, bool bEnableKawaiiSetting, const class FString& CurrentKawaiiState, class UPlayerAnimInstance* OwnerInstance1, struct FPoseLink* InteractiveKawaiiLayer_0)
+void UABP_NPC_ZNF_Kawaii_C::ExecuteUbergraph_ABP_NPC_ZNF_Kawaii(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_NPC_ZNF_Kawaii_C", "InteractiveKawaiiLayer");
+		Func = Class->GetFunction("ABP_NPC_ZNF_Kawaii_C", "ExecuteUbergraph_ABP_NPC_ZNF_Kawaii");
 
-	Params::ABP_NPC_ZNF_Kawaii_C_InteractiveKawaiiLayer Parms{};
+	Params::ABP_NPC_ZNF_Kawaii_C_ExecuteUbergraph_ABP_NPC_ZNF_Kawaii Parms{};
 
-	Parms.InPose_2 = std::move(InPose_2);
-	Parms.bEnableKawaiiSetting = bEnableKawaiiSetting;
-	Parms.CurrentKawaiiState = std::move(CurrentKawaiiState);
-	Parms.OwnerInstance1 = OwnerInstance1;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (InteractiveKawaiiLayer_0 != nullptr)
-		*InteractiveKawaiiLayer_0 = std::move(Parms.InteractiveKawaiiLayer_0);
 }
 
 
-// Function ABP_ZNF_Kawaii.ABP_NPC_ZNF_Kawaii_C.ChestLayer
-// (HasOutParams, BlueprintCallable)
+// Function ABP_ZNF_Kawaii.ABP_NPC_ZNF_Kawaii_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FPoseLink&                 InPose_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FPoseLink*                       ChestLayer_0                                           (Parm, OutParm, NoDestructor)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UABP_NPC_ZNF_Kawaii_C::ChestLayer(const struct FPoseLink& InPose_0, struct FPoseLink* ChestLayer_0)
+void UABP_NPC_ZNF_Kawaii_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_NPC_ZNF_Kawaii_C", "ChestLayer");
+		Func = Class->GetFunction("ABP_NPC_ZNF_Kawaii_C", "AnimGraph");
 
-	Params::ABP_NPC_ZNF_Kawaii_C_ChestLayer Parms{};
-
-	Parms.InPose_0 = std::move(InPose_0);
+	Params::ABP_NPC_ZNF_Kawaii_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (ChestLayer_0 != nullptr)
-		*ChestLayer_0 = std::move(Parms.ChestLayer_0);
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 
@@ -103,44 +90,57 @@ void UABP_NPC_ZNF_Kawaii_C::NewKawaiiLayer(const struct FPoseLink& InPose, bool 
 }
 
 
-// Function ABP_ZNF_Kawaii.ABP_NPC_ZNF_Kawaii_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ABP_ZNF_Kawaii.ABP_NPC_ZNF_Kawaii_C.ChestLayer
+// (HasOutParams, BlueprintCallable)
 // Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// const struct FPoseLink&                 InPose_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPoseLink*                       ChestLayer_0                                           (Parm, OutParm, NoDestructor)
 
-void UABP_NPC_ZNF_Kawaii_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+void UABP_NPC_ZNF_Kawaii_C::ChestLayer(const struct FPoseLink& InPose_0, struct FPoseLink* ChestLayer_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_NPC_ZNF_Kawaii_C", "AnimGraph");
+		Func = Class->GetFunction("ABP_NPC_ZNF_Kawaii_C", "ChestLayer");
 
-	Params::ABP_NPC_ZNF_Kawaii_C_AnimGraph Parms{};
+	Params::ABP_NPC_ZNF_Kawaii_C_ChestLayer Parms{};
+
+	Parms.InPose_0 = std::move(InPose_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+	if (ChestLayer_0 != nullptr)
+		*ChestLayer_0 = std::move(Parms.ChestLayer_0);
 }
 
 
-// Function ABP_ZNF_Kawaii.ABP_NPC_ZNF_Kawaii_C.ExecuteUbergraph_ABP_NPC_ZNF_Kawaii
-// (Final, UbergraphFunction)
+// Function ABP_ZNF_Kawaii.ABP_NPC_ZNF_Kawaii_C.InteractiveKawaiiLayer
+// (HasOutParams, BlueprintCallable)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPoseLink&                 InPose_2                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// bool                                    bEnableKawaiiSetting                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const class FString&                    CurrentKawaiiState                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// class UPlayerAnimInstance*              OwnerInstance1                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPoseLink*                       InteractiveKawaiiLayer_0                               (Parm, OutParm, NoDestructor)
 
-void UABP_NPC_ZNF_Kawaii_C::ExecuteUbergraph_ABP_NPC_ZNF_Kawaii(int32 EntryPoint)
+void UABP_NPC_ZNF_Kawaii_C::InteractiveKawaiiLayer(const struct FPoseLink& InPose_2, bool bEnableKawaiiSetting, const class FString& CurrentKawaiiState, class UPlayerAnimInstance* OwnerInstance1, struct FPoseLink* InteractiveKawaiiLayer_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_NPC_ZNF_Kawaii_C", "ExecuteUbergraph_ABP_NPC_ZNF_Kawaii");
+		Func = Class->GetFunction("ABP_NPC_ZNF_Kawaii_C", "InteractiveKawaiiLayer");
 
-	Params::ABP_NPC_ZNF_Kawaii_C_ExecuteUbergraph_ABP_NPC_ZNF_Kawaii Parms{};
+	Params::ABP_NPC_ZNF_Kawaii_C_InteractiveKawaiiLayer Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.InPose_2 = std::move(InPose_2);
+	Parms.bEnableKawaiiSetting = bEnableKawaiiSetting;
+	Parms.CurrentKawaiiState = std::move(CurrentKawaiiState);
+	Parms.OwnerInstance1 = OwnerInstance1;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (InteractiveKawaiiLayer_0 != nullptr)
+		*InteractiveKawaiiLayer_0 = std::move(Parms.InteractiveKawaiiLayer_0);
 }
 
 }

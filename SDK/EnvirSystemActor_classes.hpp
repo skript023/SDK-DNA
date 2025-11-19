@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "Enum_Weather_structs.hpp"
 #include "Engine_structs.hpp"
 #include "EM_structs.hpp"
 #include "EM_classes.hpp"
-#include "Enum_Weather_structs.hpp"
 
 
 namespace SDK

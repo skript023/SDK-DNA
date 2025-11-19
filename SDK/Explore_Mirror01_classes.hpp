@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MirrorControl_structs.hpp"
+#include "Engine_structs.hpp"
 #include "EM_classes.hpp"
 
 

@@ -12,13 +12,13 @@
 
 #include "Struct_HornPrefab_structs.hpp"
 #include "Struct_CMNMaterials_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Struct_CMNPCHorn_structs.hpp"
-#include "Engine_structs.hpp"
-#include "Struct_CMNPCModule_structs.hpp"
-#include "Enum_NPC_Exp_Eyes_structs.hpp"
-#include "Enum_NPC_Exp_Mouth_structs.hpp"
 #include "S_NPC_Mouth_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Enum_NPC_Exp_Eyes_structs.hpp"
+#include "Struct_CMNPCModule_structs.hpp"
+#include "Enum_NPC_Exp_Mouth_structs.hpp"
 #include "Struct_NPC_Exp_structs.hpp"
 
 
@@ -148,6 +148,25 @@ public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_NPC_CM_Talk_C_ReceiveTick;
+
+// Function BP_NPC_CM_Talk.BP_NPC_CM_Talk_C.UserConstructionScript
+// 0x0048 (0x0048 - 0x0000)
+struct BP_NPC_CM_Talk_C_UserConstructionScript final
+{
+public:
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_3;                 // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NPC_CM_Talk_C_UserConstructionScript;
 
 // Function BP_NPC_CM_Talk.BP_NPC_CM_Talk_C.FaceMIPick
 // 0x0118 (0x0118 - 0x0000)
@@ -361,25 +380,6 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x00B0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 DUMPER7_ASSERTS_BP_NPC_CM_Talk_C_SetFaceAccessoryPrefab;
-
-// Function BP_NPC_CM_Talk.BP_NPC_CM_Talk_C.UserConstructionScript
-// 0x0048 (0x0048 - 0x0000)
-struct BP_NPC_CM_Talk_C_UserConstructionScript final
-{
-public:
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_3;                 // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NPC_CM_Talk_C_UserConstructionScript;
 
 }
 

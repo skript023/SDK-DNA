@@ -9,9 +9,7 @@
 // FORWARD DECLARATIONS
 
 
-namespace Feina01_ByteDance01 { class USequenceDirector_C; }
-
 namespace SaiqiWalk1 { class USequenceDirector_C; }
 
-namespace Heitao_Skill02_Cam { class USequenceDirector_C; }
+namespace Feina01_ByteDance01 { class USequenceDirector_C; }
 

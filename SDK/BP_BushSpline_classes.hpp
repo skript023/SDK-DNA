@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "SBP_BushSpline_Instance_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_classes.hpp"
 
 

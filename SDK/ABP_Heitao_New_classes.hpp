@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "AnimGraphRuntime_structs.hpp"
-#include "MovementDataAsset_structs.hpp"
 #include "Engine_structs.hpp"
+#include "MovementDataAsset_structs.hpp"
 #include "KawaiiPhysics_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EM_classes.hpp"
@@ -23,7 +23,7 @@ namespace SDK
 
 // AnimBlueprintGeneratedClass ABP_Heitao_New.ABP_Heitao_New_C
 // 0x32F70 (0x33A20 - 0x0AB0)
-class UABP_Heitao_New_C final : public UPlayerAnimInstance
+class UABP_Heitao_New_C : public UPlayerAnimInstance
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0AB0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

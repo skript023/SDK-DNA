@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "InputCore_structs.hpp"
-#include "E_PPEnum_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_PPEnum_structs.hpp"
 #include "EM_structs.hpp"
 #include "Engine_structs.hpp"
 

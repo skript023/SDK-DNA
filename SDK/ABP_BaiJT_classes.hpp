@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ABP_NPC_classes.hpp"
 #include "Engine_structs.hpp"
+#include "ABP_NPC_classes.hpp"
 
 
 namespace SDK

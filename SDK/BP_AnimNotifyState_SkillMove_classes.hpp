@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "EM_structs.hpp"
 #include "BP_AnimNotifyStateBase_classes.hpp"
+#include "EM_structs.hpp"
 
 
 namespace SDK

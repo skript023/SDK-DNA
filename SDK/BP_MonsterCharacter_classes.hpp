@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "AnimSelector_structs.hpp"
-#include "CollapsedGraph_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "EM_structs.hpp"
 #include "EM_classes.hpp"
+#include "CollapsedGraph_structs.hpp"
 
 
 namespace SDK

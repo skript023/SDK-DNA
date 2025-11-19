@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "EM_structs.hpp"
-#include "BP_Sound_Volume_Type_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "BP_Sound_Volume_Type_structs.hpp"
 
 
 namespace SDK::Params

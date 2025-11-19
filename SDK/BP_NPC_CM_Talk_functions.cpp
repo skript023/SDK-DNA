@@ -204,6 +204,20 @@ void ABP_NPC_CM_Talk_C::EyeTimeline_0__FinishedFunc()
 }
 
 
+// Function BP_NPC_CM_Talk.BP_NPC_CM_Talk_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_NPC_CM_Talk_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPC_CM_Talk_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_NPC_CM_Talk.BP_NPC_CM_Talk_C.FaceMIPick
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -349,20 +363,6 @@ void ABP_NPC_CM_Talk_C::SetFaceAccessoryPrefab()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_NPC_CM_Talk_C", "SetFaceAccessoryPrefab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPC_CM_Talk.BP_NPC_CM_Talk_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_NPC_CM_Talk_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPC_CM_Talk_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "NPC_Enum_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Body_Enum_structs.hpp"
+#include "Engine_structs.hpp"
+#include "NPC_Enum_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Enum_NPC_Exp_Mouth_structs.hpp"
 #include "EM_classes.hpp"

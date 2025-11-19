@@ -15,8 +15,8 @@
 #include "WordFadeTimeMod_structs.hpp"
 #include "WordLoopMod_structs.hpp"
 #include "WordFadePosAniMod_structs.hpp"
-#include "WordFadeRotAniMod_structs.hpp"
 #include "Engine_structs.hpp"
+#include "WordFadeRotAniMod_structs.hpp"
 
 
 namespace SDK::Params

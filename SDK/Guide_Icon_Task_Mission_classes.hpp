@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "Guide_Icon_Task_classes.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK

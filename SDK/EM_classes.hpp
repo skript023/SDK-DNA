@@ -58,7 +58,7 @@ namespace SDK
 
 // Class EM.AccessoryItem
 // 0x0090 (0x0330 - 0x02A0)
-class AAccessoryItem : public AActor
+class AAccessoryItem final : public AActor
 {
 public:
 	int32                                         DataId;                                            // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -22345,7 +22345,7 @@ DUMPER7_ASSERTS_UDynamicBindingBPObject;
 
 // Class EM.PassiveEffectObjectClient
 // 0x0080 (0x00C0 - 0x0040)
-class UPassiveEffectObjectClient final : public UDynamicBindingBPObject
+class UPassiveEffectObjectClient : public UDynamicBindingBPObject
 {
 public:
 	uint8                                         Pad_40[0x18];                                      // 0x0040(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
@@ -38142,7 +38142,7 @@ DUMPER7_ASSERTS_USequenceControlGameInstanceSubsystem;
 
 // Class EM.SequencePostProcessActor
 // 0x0248 (0x04E8 - 0x02A0)
-class ASequencePostProcessActor final : public AActor
+class ASequencePostProcessActor : public AActor
 {
 public:
 	class UMaterialInstanceDynamic*               PPDMI;                                             // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -40263,7 +40263,7 @@ DUMPER7_ASSERTS_UUI_Battle_Buff;
 
 // Class EM.UI_Battle_ExclusiveSkillBase
 // 0x0000 (0x0630 - 0x0630)
-class UUI_Battle_ExclusiveSkillBase final : public UUIBuffBase
+class UUI_Battle_ExclusiveSkillBase : public UUIBuffBase
 {
 public:
 	static class UClass* StaticClass()
@@ -40355,7 +40355,7 @@ DUMPER7_ASSERTS_UUI_TakeAimIndicator;
 
 // Class EM.UIChangeSceneLoading
 // 0x0010 (0x05F8 - 0x05E8)
-class UUIChangeSceneLoading final : public UUIState
+class UUIChangeSceneLoading : public UUIState
 {
 public:
 	uint8                                         Pad_5E8[0x10];                                     // 0x05E8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])

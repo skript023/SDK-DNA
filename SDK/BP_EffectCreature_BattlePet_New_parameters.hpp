@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "St_PetSkin_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "St_PetSkin_structs.hpp"
 
 
 namespace SDK::Params

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "PanControl_structs.hpp"
+#include "Engine_structs.hpp"
 #include "EM_classes.hpp"
 
 

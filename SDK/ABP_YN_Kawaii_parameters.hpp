@@ -16,29 +16,23 @@
 namespace SDK::Params
 {
 
-// Function ABP_YN_Kawaii.ABP_YN_Kawaii_C.InteractiveKawaiiLayer
-// 0x0040 (0x0040 - 0x0000)
-struct ABP_YN_Kawaii_C_InteractiveKawaiiLayer final
+// Function ABP_YN_Kawaii.ABP_YN_Kawaii_C.ExecuteUbergraph_ABP_YN_Kawaii
+// 0x0004 (0x0004 - 0x0000)
+struct ABP_YN_Kawaii_C_ExecuteUbergraph_ABP_YN_Kawaii final
 {
 public:
-	struct FPoseLink                              InPose_2;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	bool                                          bEnableKawaiiSetting;                              // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CurrentKawaiiState;                                // 0x0018(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class UPlayerAnimInstance*                    OwnerInstance1;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPoseLink                              InteractiveKawaiiLayer_0;                          // 0x0030(0x0010)(Parm, OutParm, NoDestructor)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_ABP_YN_Kawaii_C_InteractiveKawaiiLayer;
+DUMPER7_ASSERTS_ABP_YN_Kawaii_C_ExecuteUbergraph_ABP_YN_Kawaii;
 
-// Function ABP_YN_Kawaii.ABP_YN_Kawaii_C.ChestLayer
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_YN_Kawaii_C_ChestLayer final
+// Function ABP_YN_Kawaii.ABP_YN_Kawaii_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_YN_Kawaii_C_AnimGraph final
 {
 public:
-	struct FPoseLink                              InPose_0;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              ChestLayer_0;                                      // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-DUMPER7_ASSERTS_ABP_YN_Kawaii_C_ChestLayer;
+DUMPER7_ASSERTS_ABP_YN_Kawaii_C_AnimGraph;
 
 // Function ABP_YN_Kawaii.ABP_YN_Kawaii_C.NewKawaiiLayer
 // 0x0048 (0x0048 - 0x0000)
@@ -56,23 +50,29 @@ public:
 };
 DUMPER7_ASSERTS_ABP_YN_Kawaii_C_NewKawaiiLayer;
 
-// Function ABP_YN_Kawaii.ABP_YN_Kawaii_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_YN_Kawaii_C_AnimGraph final
+// Function ABP_YN_Kawaii.ABP_YN_Kawaii_C.ChestLayer
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_YN_Kawaii_C_ChestLayer final
 {
 public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              InPose_0;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              ChestLayer_0;                                      // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-DUMPER7_ASSERTS_ABP_YN_Kawaii_C_AnimGraph;
+DUMPER7_ASSERTS_ABP_YN_Kawaii_C_ChestLayer;
 
-// Function ABP_YN_Kawaii.ABP_YN_Kawaii_C.ExecuteUbergraph_ABP_YN_Kawaii
-// 0x0004 (0x0004 - 0x0000)
-struct ABP_YN_Kawaii_C_ExecuteUbergraph_ABP_YN_Kawaii final
+// Function ABP_YN_Kawaii.ABP_YN_Kawaii_C.InteractiveKawaiiLayer
+// 0x0040 (0x0040 - 0x0000)
+struct ABP_YN_Kawaii_C_InteractiveKawaiiLayer final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPoseLink                              InPose_2;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	bool                                          bEnableKawaiiSetting;                              // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CurrentKawaiiState;                                // 0x0018(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class UPlayerAnimInstance*                    OwnerInstance1;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPoseLink                              InteractiveKawaiiLayer_0;                          // 0x0030(0x0010)(Parm, OutParm, NoDestructor)
 };
-DUMPER7_ASSERTS_ABP_YN_Kawaii_C_ExecuteUbergraph_ABP_YN_Kawaii;
+DUMPER7_ASSERTS_ABP_YN_Kawaii_C_InteractiveKawaiiLayer;
 
 }
 

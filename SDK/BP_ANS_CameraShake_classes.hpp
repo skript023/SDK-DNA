@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayCameras_structs.hpp"
-#include "NotifyTargetEnum_structs.hpp"
 #include "EM_classes.hpp"
+#include "NotifyTargetEnum_structs.hpp"
 
 
 namespace SDK

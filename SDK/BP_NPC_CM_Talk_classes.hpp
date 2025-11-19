@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "NPC_Enum_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Body_Enum_structs.hpp"
+#include "Engine_structs.hpp"
+#include "NPC_Enum_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Enum_NPC_Exp_Mouth_structs.hpp"
-#include "BP_NPC_classes.hpp"
 #include "Enum_NPC_Exp_Eyes_structs.hpp"
+#include "BP_NPC_classes.hpp"
+#include "Enum_NPC_Exp_Mouth_structs.hpp"
 
 
 namespace SDK
@@ -93,6 +93,7 @@ public:
 	void MouthTimeline_0__FinishedFunc();
 	void EyeTimeline_0__UpdateFunc();
 	void EyeTimeline_0__FinishedFunc();
+	void UserConstructionScript();
 	void FaceMIPick(const class FString& NpcName_0, int32 Index_0, const class FString& Part);
 	void CharPosSet(float 角色高度_0);
 	void HornsMeshPick(class UStaticMeshComponent* HornMesh, int32 Index_0, const class FString& Direct);
@@ -101,7 +102,6 @@ public:
 	void HornSymmetry();
 	void SetHeadAccessoryPrefab();
 	void SetFaceAccessoryPrefab();
-	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

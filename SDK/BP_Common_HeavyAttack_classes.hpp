@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Common_HeavyAttack.BP_Common_HeavyAttack_C
 // 0x0028 (0x0130 - 0x0108)
-class UBP_Common_HeavyAttack_C final : public UBP_PassiveEffectBase_C
+class UBP_Common_HeavyAttack_C : public UBP_PassiveEffectBase_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0108(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
